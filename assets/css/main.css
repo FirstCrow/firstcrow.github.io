@@ -2740,7 +2740,7 @@ input, select, textarea {
 				}
 
 				body:not(.is-touch) .tiles article:hover > .image:after {
-					opacity: 0.75;
+					opacity: 1;
 				}
 
 			body:not(.is-touch) .tiles article:hover .content {
@@ -2759,10 +2759,13 @@ input, select, textarea {
 			transform: scale(0.9);
 			opacity: 0;
 		}
-
-		body.is-touch .tiles article:hover > .image:after {
+		body.is-touch .tiles article:hover > .image:before {
 			background-color: #000000;
 			opacity: .9;
+		}
+
+		body.is-touch .tiles article:hover > .image:after {
+			opacity: 1;
 		}
 
 		body.is-touch .tiles article .content {
