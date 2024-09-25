@@ -2762,9 +2762,9 @@ input, select, textarea {
 
 		body.is-touch .tiles article > .image:before {
 			background-color: #000000;
-			opacity: .75;
+			opacity: .9;
 		}
-		
+
 		body.is-touch .tiles article .content {
 			max-height: 15em;
 			opacity: .75;
