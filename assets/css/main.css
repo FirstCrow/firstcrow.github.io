@@ -2760,7 +2760,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		body.is-touch .tiles article > .image:before {
+		body.is-touch .tiles article > .image:after {
 			background-color: #000000;
 			opacity: .9;
 		}
