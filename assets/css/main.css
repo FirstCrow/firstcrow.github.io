@@ -2704,7 +2704,7 @@ input, select, textarea {
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #f2849e;
+				background-color: #000000;
 			}
 
 			.tiles article.style2 > .image:before {
@@ -2736,11 +2736,10 @@ input, select, textarea {
 
 				body:not(.is-touch) .tiles article:hover > .image:before {
 					background-color: #000000;
-					opacity: .25;
+					opacity: .75;
 				}
 
 				body:not(.is-touch) .tiles article:hover > .image:after {
-					background-color: #000000;
 					opacity: 0.75;
 				}
 
@@ -2762,8 +2761,9 @@ input, select, textarea {
 		}
 
 		body.is-touch .tiles article .content {
+			background-color: #000000;
 			max-height: 15em;
-			opacity: .5;
+			opacity: .75;
 		}
 
 		@media screen and (max-width: 1280px) {
