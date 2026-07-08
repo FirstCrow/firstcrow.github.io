@@ -42,15 +42,126 @@
 					</nav>
 
 				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<center><h1>Stylized Fluids</h1></center>
-							<center><span class="image fit" style="max-width: 600px; width: 100%;"><img src="images/StylizedFluids/Backdrop.png" alt="" /></span></center>
-							<p>Tri-pattern design</p>
-							<p>Depth and transparency</p>
-							<p>Gerstner Waves</p>
+				<div id="main">
+					<div class="inner">
+						
+						<!-- Header & Subtitle -->
+						<div style="text-align: center; margin-bottom: 40px;">
+							<h1>Stylized Fluids</h1>
+							<p style="font-size: 1.2em; color: #555; margin-top: -15px;">
+								<strong>A stylized water shader built in Unity using HLSL</strong>
+							</p>
 						</div>
+
+						<!-- Hero Showcase -->
+						<div style="text-align: center; margin-bottom: 40px;">
+							<span class="image fit" style="max-width: 1500px; width: 100%;">
+								<img src="images/StylizedFluids/Backdrop.png" alt="Stylized Fluids Hero Shot" />
+							</span>
+						</div>
+						
+						<!-- Project Overview -->
+						<p><strong>Overview - </strong>Tons of stylized fluid shaders out there limit you with their choice of patterns. This shader exists as a solution to that problem. In this shader, I provide the ability for the user to select which pattern they want to use for the surface, intersections, and subsurface. You can even mix my built-in patterns with your own pattern textures, allowing for infinite possibilities.</p>
+						
+						<hr style="margin: 40px 0;" />
+
+						<!-- Version Release Lists -->
+						<div style="margin-bottom: 40px;">
+							<h3 style="margin-bottom: 10px;">Version 1.0.0 (Initial Release)</h3>
+							<ul style="list-style-type: disc; text-align: left; padding-left: 35px; margin: 0 auto; max-width: 95%;">
+								<li>Tri-layered patterns</li>
+								<li>Depth and transparency</li>
+								<li>Gerstner Waves displacement</li>
+								<li>HDR Colors & HSV Blending</li>
+								<li>Custom Inspector GUI</li>
+								<li>Custom pattern and normal texture support</li>
+								<li>Dynamic refraction</li>
+							</ul>
+						</div>
+
+						<div style="margin-bottom: 40px;">
+							<h3 style="margin-bottom: 10px;">Future Roadmap</h3>
+							<ul style="list-style-type: disc; text-align: left; padding-left: 35px; margin: 0 auto; max-width: 95%;">
+								<li>Dynamic lighting configurations & specular reflections</li>
+								<li>Distance-based tessellation</li>
+								<li>Physical object fluid interactions & ripple creation</li>
+							</ul>
+						</div>
+
+						<hr style="margin: 40px 0;" />
+
+						<!-- Image Grid Row 1 -->
+						<div style="display: flex; justify-content: space-between; gap: 20px; margin: 30px 0;">
+							<div style="flex: 1; text-align: center;">
+								<img src="images/StylizedFluids/Magma.png" alt="HDR Colors" style="width: 100%; height: auto; margin-bottom: 8px; border-radius: 4px;" />
+								<p><u>HDR</u> Colors design</p>
+							</div>
+							<div style="flex: 1; text-align: center;">
+								<img src="images/StylizedFluids/ClearWater.png" alt="Depth and transparency" style="width: 100%; height: auto; margin-bottom: 8px; border-radius: 4px;" />
+								<p><u>Depth</u> and <u>transparency</u></p>
+							</div>
+							<div style="flex: 1; text-align: center;">
+								<img src="images/StylizedFluids/Ice.png" alt="HSV Blending" style="width: 100%; height: auto; margin-bottom: 8px; border-radius: 4px;" />
+								<p><u>HSV Blending</u></p>
+							</div>
+						</div>
+
+						<!-- Image Grid Row 2 -->
+						<div style="display: flex; justify-content: space-between; gap: 20px; margin: 30px 0;">
+							<div style="flex: 1; text-align: center;">
+								<img src="images/StylizedFluids/Water.png" alt="Custom Textures" style="width: 100%; height: auto; margin-bottom: 8px; border-radius: 4px;" />
+								<p><u>Custom Pattern Texture</u> Support</p>
+							</div>
+							<div style="flex: 1; text-align: center;">
+								<img src="images/StylizedFluids/Poison.png" alt="Many Patterns Available" style="width: 100%; height: auto; margin-bottom: 8px; border-radius: 4px;" />
+								<p>6-8 built-in <u>pattern choices per layer</u></p>
+							</div>
+							<div style="flex: 1; text-align: center;">
+								<img src="images/StylizedFluids/Blood.png" alt="Performance" style="width: 100%; height: auto; margin-bottom: 8px; border-radius: 4px;" />
+								<p>Performance Friendly (<u>Minimal Variants/Branches</u>)</p>
+							</div>
+						</div>
+
+						<hr style="margin: 40px 0;" />
+
+						<!-- Deep Dive: Normal Mapping -->
+						<div style="text-align: center; margin-bottom: 20px;">
+							<h3 style="text-align: left; margin-bottom: 15px;">Normal Blending & Displacements</h3>
+							<span class="image fit" style="max-width: 800px; width: 100%; display: inline-block; margin-bottom: 20px;">
+								<img src="images/StylizedFluids/NormalBlank.png" alt="Normal Mapping Breakdown" style="border-radius: 4px;" />
+							</span>
+						</div>
+						<div style="clear: both; max-width: 800px; margin: 0 auto 50px auto;">
+							<ul style="list-style-type: disc; text-align: left; padding-left: 35px; margin: 0;">
+								<li><u>Custom normal texture</u> support for personalized wave distortion.</li>
+								<li><u>Refractions</u> calculated dynamically based on the normal offset data.</li>
+								<li>Mathematical <u>Gerstner Waves</u> implemented directly within the vertex shader.</li>
+								<li>Integrated <u>Fresnel</u> math to handle edge opacity and reflection falloff at grazing angles.</li>
+							</ul>
+						</div>
+
+						<!-- Deep Dive: Tooling & UX -->
+						<div style="text-align: center; margin-bottom: 20px;">
+							<h3 style="text-align: left; margin-bottom: 15px;">Custom Tooling & Inspector GUI</h3>
+							<span class="image fit" style="max-width: 800px; width: 100%; display: inline-block; margin-bottom: 20px;">
+								<img src="images/StylizedFluids/GUI.png" alt="Custom Unity Editor UI" style="border-radius: 4px;" />
+							</span>
+						</div>
+						<div style="clear: both; max-width: 800px; margin: 0 auto 20px auto;">
+							<ul style="list-style-type: disc; text-align: left; padding-left: 35px; margin: 0 0 20px 0;">
+								<li><u>Dropdown menus</u> map intuitively to integer-defined pattern selections.</li>
+								<li><u>Fine-tuned sliders</u> control edge clipping and layer sharpness thresholds.</li>
+								<li>Context-aware shader keywords toggle, hiding unused properties to clean up the workspace.</li>
+							</ul>
+							
+							<!-- Professional Callout Box -->
+							<blockquote style="margin: 20px 0; padding: 15px 20px; border-left: 4px solid #f2849e; background: rgba(0,0,0,0.02); font-style: normal;">
+								<strong style="color: #f2849e;">Tech Art Optimization:</strong> RGB to HSV color conversions are handled entirely on the CPU side via the custom Editor GUI script, saving valuable GPU math cycles at runtime by preventing instruction overhead inside the pixel shader.
+							</blockquote>
+						</div>
+
 					</div>
+				</div>
 			</div>
 
 		<!-- Scripts -->
