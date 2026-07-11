@@ -44,11 +44,90 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<center><h1>Volumetric Lighting</h1></center>
-							<center><span class="image fit" style="max-width: 600px; width: 100%;"><img src="images/VolumetricLighting/VolumetricLighting.png" alt="" /></span></center>
-							<p>Main light support</p>
-							<p>Additional light support</p>
-							<p>Low step count with striking visuals</p>
+
+							<!-- Header & Subtitle -->
+							<div style="text-align: center; margin-bottom: 40px;">
+								<h1>Nathan Gardea - Volumetric Lighting</h1>
+								<p style="font-size: 1.2em; color: #555; margin-top: -15px;">
+									<b>A raymarching shader built in Unity using HLSL</b> <br/>
+								</p>
+							</div>
+
+							<!-- Overall Showcase -->
+							<div style="text-align: center; margin-bottom: 40px;">
+								<span class="image fit" style="max-width: 1500px; width: 100%;">
+									<img src="images/VolumetricLighting/VolumetricLighting.png" alt="Stylized Fluids Hero Shot" />
+								</span>
+							</div>
+
+							<!-- Project Overview -->
+							<p><b>Overview - </b>Volumetrics use an expensive computation known as raymarching to function. This makes them hardly used in low-end software
+								and leads many people to replace them with particle system/quad based solutions. My goal is to make a volumetric lighting shader that can run efficiently
+								on most platforms. I'll eventually branch off this project to develop other raymarching shaders for fog, clouds, and raytracing.
+							</p>
+
+							<hr style="margin: 40px 0;" />
+
+							<!-- Version Release Lists -->
+							<div style="margin-bottom: 40px;">
+								<h3 style="margin-bottom: 10px;">Current Features</h3>
+								<ul style="list-style-type: disc; text-align: left; padding-left: 35px; margin: 0 auto; max-width: 95%;">
+									<li><b>Main light support</b>. Colors and intensity affect voluemtic color.</li>
+									<li><b>Additional light support</b>. Colors and intensity affect voluemtic color.</li>
+									<li><b>Henyey Greenstein subsurface scattering approximation</b>. (Main light only until additonal light optimizations are made).</li>
+									<li><b>Noise offset</b> to help hide step boundaries.</li>
+									<li>Noise offset scales with ray length. (Helps visuals look good from up close and far).</li>
+									<li><b>Forward+ support</b>. (Works with infinite many additional lights, however, more = worse performance).</li>
+								</ul>
+							</div>
+
+							<div style="margin-bottom: 40px;">
+								<h3 style="margin-bottom: 10px;">Future Roadmap</h3>
+								<ul style="list-style-type: disc; text-align: left; padding-left: 35px; margin: 0 auto; max-width: 95%;">
+									<li>Vastly improve additional light performance.</li>
+									<li>TAA support to help reduce noise artifacts.</li>
+									<li>Consider reducing screen resolution before calculations to help performance on higher resolution screens.</li>
+									<li>Reduce main light contribututions at farther distances to help reduce blinding main light.</li>
+								</ul>
+							</div>
+
+							<hr style="margin-bottom: 40px;" />
+
+							<!-- Main Light Comparison -->
+							<div style="text-align: center; margin-bottom: 20px;">
+								<h3 style="text-align: left; margin-bottom: 15px;">Main Light Showcase</h3>
+								<span class="image fit" style="max-width: 800px; width: 100%; display: inline-block; margin-bottom: 20px;">
+									<img src="images/VolumetricLighting/MainlightComparison.png" alt="Mainlight Comparison" style="border-radius: 4px;" />
+									<p>Main Light feature <b>Disabled (Left)</b>, Main light feature <b>Enabled(Right)</b></p>
+								</span>
+							</div>
+
+							<hr style="margin-bottom: 40px;" />
+
+							<h3 style="text-align: left; margin-bottom: 15px;">Additional Lights Showcase</h3>
+							<!-- Image Grid Row 1 -->
+							<div style="display: flex; justify-content: space-between; gap: 10px; margin: 20px 0;">
+								<div style="flex: 1; text-align: center;">
+									<img src="images/VolumetricLighting/AddOnly.png" alt="Additonal Light" style="width: 100%; height: auto; margin-bottom: 8px; border-radius: 4px;" />
+									<p>Additional lights feature <b>Enabled</b></p>
+								</div>
+								<div style="flex: 1; text-align: center;">
+									<img src="images/VolumetricLighting/None.png" alt="None" style="width: 100%; height: auto; margin-bottom: 8px; border-radius: 4px;" />
+									<p>Additional lights feature <b>Disabled</b></p>
+								</div>
+							</div>
+
+							<hr style="margin-bottom: 40px;" />
+
+							<!-- Main Light Comparison -->
+							<div style="text-align: center; margin-bottom: 20px;">
+								<h3 style="text-align: left; margin-bottom: 15px;">Main and Additional Showcase</h3>
+								<span class="image fit" style="max-width: 800px; width: 100%; display: inline-block; margin-bottom: 20px;">
+									<img src="images/VolumetricLighting/MainAdd.png" alt="Mainlight Comparison" style="border-radius: 4px;" />
+									<p><b>Main</b> and <b>Additional</b> light features enabled</p>
+								</span>
+							</div>
+
 						</div>
 					</div>
 			</div>
