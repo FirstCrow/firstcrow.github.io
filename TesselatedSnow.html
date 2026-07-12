@@ -44,12 +44,96 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<center><h1>Tesselated Snow</h1></center>
-							<center><span class="image fit" style="max-width: 600px; width: 100%;"><img src="images/TesselatedSnow/TesselatedSnow.png" alt="" /></span></center>
-							<p>Snow Mask</p>
-							<p>Interactable</p>
-							<p>Regenerates over time</p>
-							<p>Performant tesselation</p>
+
+							<!-- Header & Subtitle -->
+							<div style="text-align: center; margin-bottom: 40px;">
+								<h1>Nathan Gardea - Tesselated Snow</h1>
+								<p style="font-size: 1.2em; color: #555; margin-top: -15px;">
+									<b>A snow shader built in Unity using HLSL</b> <br/>
+								</p>
+							</div>
+
+							<!-- Overall Showcase -->
+							<div style="text-align: center; margin-bottom: 40px;">
+								<span class="image fit" style="max-width: 1500px; width: 100%;">
+									<img src="images/TesselatedSnow/TesselatedSnow.png" alt="Stylized Fluids Hero Shot" />
+								</span>
+							</div>
+
+							<!-- Project Overview -->
+							<p><b>Overview - </b>Tesselation fascninates me and I thought of this shader as the perfect oppurtunity to explore its benefits
+								and its downsides. I do know that it is quite expensive relative to POM shaders, though I can see some benefits over them. In this shader, I wanted
+								to create a snow mask texture that acts similar to a shadow mask that determines where snow is placed. Once snow is placed, the mesh will tesselate
+								and dispace vertically. I want to also make this interactive. If an object moves across the surface, the snow will compress and regenerate slowly. 
+								This shader will add a lot of realism to a snow scene that I can create in a future project.
+							</p>
+
+							<hr style="margin: 40px 0;" />
+
+							<!-- Version Release Lists -->
+							<div style="margin-bottom: 40px;">
+								<h3 style="margin-bottom: 10px;">Current Version</h3>
+								<ul style="list-style-type: disc; text-align: left; padding-left: 35px; margin: 0 auto; max-width: 95%;">
+									<li>Snow Mask</li>
+									<li>Interactable</li>
+									<li>Regenerates over time</li>
+									<li>Performant tesselation</li>
+								</ul>
+							</div>
+
+							<div style="margin-bottom: 40px;">
+								<h3 style="margin-bottom: 10px;">Future Roadmap</h3>
+								<ul style="list-style-type: disc; text-align: left; padding-left: 35px; margin: 0 auto; max-width: 95%;">
+									<li>World space snow mask.</li>
+									<li>Rounded vertex displacements.</li>
+									<li>Lighting.</li>
+									<li>Prevent floating objects from contributing to snow mask at a certain threshold.</li>
+									<li>Interactability using sdfs.</li>
+									<li>Regenerating snow.</li>
+								</ul>
+							</div>
+
+							<hr style="margin: 40px 0;" />
+
+							<!-- Tesselation -->
+							<div style="text-align: center; margin-bottom: 20px;">
+								<h3 style="text-align: left; margin-bottom: 15px;">Tesselation</h3>
+								<span class="image fit" style="max-width: 800px; width: 100%; display: inline-block; margin-bottom: 20px;">
+									<img src="images/TesselatedSnow/TesselatedSnow_2.png" alt="Normal Mapping Breakdown" style="border-radius: 4px;" />
+								</span>
+							</div>
+							<div style="clear: both; max-width: 800px; margin: 0 auto 50px auto;">
+								<ul style="list-style-type: disc; text-align: left; padding-left: 35px; margin: 0;">
+									<li>Fractional odd partitioning.</li>
+								</ul>
+							</div>
+
+							<hr style="margin: 40px 0;" />
+
+							<!-- Snow Mask -->
+							 <div style="text-align: center; margin-bottom: 20px;">
+								<h3 style="text-align: left; margin-bottom: 15px;">Snow Mask</h3>
+								<span class="image fit" style="max-width: 800px; width: 100%; display: inline-block; margin-bottom: 20px;">
+									<img src="images/TesselatedSnow/BakeZone.png" alt="Normal Mapping Breakdown" style="border-radius: 4px;" />
+								</span>
+							</div>
+							<div style="clear: both; max-width: 800px; margin: 0 auto 50px auto;">
+								<ul style="list-style-type: disc; text-align: left; padding-left: 35px; margin: 0;">
+									<li>Top down orthographic depth pre pass.</li>
+									<li>GUI to help identify baking zone.</li>
+								</ul>
+							</div>
+							<div style="text-align: center; margin-bottom: 20px;">
+								<span class="image fit" style="max-width: 800px; width: 100%; display: inline-block; margin-bottom: 20px;">
+									<img src="images/TesselatedSnow/TesselatedSnowGIF.png" alt="Normal Mapping Breakdown" style="border-radius: 4px;" />
+								</span>
+							</div>
+							<div style="clear: both; max-width: 800px; margin: 0 auto 50px auto;">
+								<ul style="list-style-type: disc; text-align: left; padding-left: 35px; margin: 0;">
+									<li>Updates in real-time.</li>
+								</ul>
+							</div>
+
 						</div>
 					</div>
 			</div>
