@@ -45,154 +45,167 @@
 					<div id="main">
 						<div class="inner">
 							<!-- Header -->
-							<div style="text-align: center; margin-bottom: 40px;">
+							<div style="text-align: center; margin-bottom: 2em;">
 								<h1>Project Dreamscape</h1>
 								<p style="font-size: 1.2em; color: #555; margin-top: -2em;">
-										<b>A Studio Aspen Game Project </b> <br/>
+										<b>A Studio Aspen Game Project Organized by EGD </b> <br/>
 										<a href="https://store.steampowered.com/app/3569570/Project_Dreamscape/"><b>Steam Link</b></a>
 								</p>
-								<span class="image fit" style="display: block; max-width: 1500px; width: 100%; margin: 0 auto;">
-									<img src="images/DreamScape/PdTitle.jpg" alt="Dreamscape Logo" />
+								<span class="image fit" style="display: block; max-width: 1000px; width: 100%; margin: 0 auto;">
+									<img src="images/DreamScape/PdCover.png" alt="Dreamscape Logo" />
 								</span>
 							</div>
 
 							<!-- Project Overview -->
 							<p><b>Project Summary - </b> When falling asleep to dream, our protagonist is thrown into a roguelike dream where she must
-								fight off varius monsters.
+								fight off various monsters.
 							</p>
 							
-							<hr style="margin: 40px 0;" />
+							<hr style="margin: 2em;" />
 
 							<!-- Version Release Lists -->
-							<div style="margin-bottom: 40px;">
-								<h3 style="margin-bottom: 10px;">Overview of my responsibilities</h3>
-								<ul style="list-style-type: disc; text-align: left; padding-left: 35px; margin: 0 auto; max-width: 95%;">
-									<li>VFX.</li>
-									<li>Shaders.</li>
-									<li>Help advise and work with 7 other tech artists.</li>
-									<li>Rigging characters.</li>
-									<li>Level Designing.</li>
+							<div style="margin-bottom: 2em;">
+								<h3 style="margin-bottom: 0;">Overview of my responsibilities</h3>
+								<ul style="list-style-type: disc; text-align: left; padding-left: 2em; margin: 0 auto; max-width: 95%;">
+									<li>Created VFX.</li>
+									<li>Create Shaders.</li>
+									<li>Worked closely with 7 technical artists, providing support & critique.</li>
+									<li>Rigged characters.</li>
+									<li>Designed a level.</li>
 								</ul>
 							</div>
 							
 							<!-- Version Release Lists -->
-							<div style="margin-bottom: 40px;">
-								<h3 style="margin-bottom: 10px;">My Contributions</h3>
-								<ul style="list-style-type: disc; text-align: left; padding-left: 35px; margin: 0 auto; max-width: 95%;">
-									<li>Created a stylized magma shader/VFX using Unity Shader Graph.</li>
-									<li>Created a waterfall and water shader.</li>
-									<li>Painterly lighting shader.</li>
-									<li>Magma Geyser/Smoke VFX</p>
-									<li>Created a stylized fresnel effet for elite enemies.</li>
-									<li>Created a Unity prefab alignment editor tool in C#.</li>
-									<li>Created three character rigs (skeleton, skeleton warrior, doll, golem) using Rigify.</li>
-									<li>Worked closely with 7 technical artists, providing support & critique.</li>
+							<div style="margin-bottom: 2em;">
+								<h3 style="margin-bottom: 0;">My Contributions</h3>
+								<ul style="list-style-type: disc; text-align: left; padding-left: 2em; margin: 0 auto; max-width: 95%;">
+									<li>Painterly lit shader (Shader Graph).</li>
+									<li>Stylized magma pool VFX (Shader Graph).</li>
+									<li>Magma Geyser/Smoke VFX (Visual Graph / Shader Graph)</li>
+									<li>Shield VFX (Visual Graph / Shader Graph)</li>
+									<li>Stylized fresnel shader for elite enemies (Shader Graph).</li>
+									<li>Low Health Screen Border Shader (Shader Graph).</li>
+									<li>Unity prefab alignment editor tool (C#).</li>
+									<li>Four character rigs (Follower, Guide, Charger, Golem) using Rigify (Blender).</li>
+									
 								</ul>
 							</div>
+
+							<hr style="margin: 2em;" />
+
 							<!-- Image Grid Row 1 -->
-							<div style="display: flex; justify-content: space-between; gap: 10px; margin: 20px 0;">
+							<center><h3 style="margin-bottom: 0;">Painterly Lit</h3></center>
+							<div style="display: flex; justify-content: space-between; gap: 0.5em; margin: 1em 0;">
 								<div style="flex: 1; text-align: center;">
-									<img src="images/AbsMomentum/Lit.png" alt="Stylized Lit" style="width: 100%; height: auto; margin-bottom: 8px; border-radius: 4px;" />
-									<p style="margin-bottom: 0.25em;">
-										<b>Stylized Lit Shader</b>
+									<img src="images/DreamScape/AssetStylizedLit.png" alt="Stylized Lit" style="width: 100%; height: auto; border-radius: 4px;" />
+									<p style="margin-bottom: 0;">
+										Painterly Lighting Shader
 									</p>
 									<ul style="text-align: left; padding-left: 2.0em;">
-										<li>Pleasant toonish cutoffs</li>
-										<li>PBR lighting controls</li>
-										<li>Additional light support</li>
-										<li>Crosshatched SSAO</li>
+										<li>Triplanar paintbrush texture.</li>
+										<li>Diffuse stepped with paintbrush texture.</li>
 									</ul>
 								</div>
 								<div style="flex: 1; text-align: center;">
-									<img src="images/AbsMomentum/Double.png" alt="Double-Sided Stylized" style="width: 100%; height: auto; margin-bottom: 8px; border-radius: 4px;" />
-									<p style="margin-bottom: 0.25em;">
-										<b>Double-Sided Stylized Lit Shader</b>
+									<img src="images/DreamScape/AssetLit.png" alt="Normal Lit" style="width: 100%; height: auto; border-radius: 4px;" />
+									<p style="margin-bottom: 0;">
+										Default Lighting Shader
 									</p>
 									<ul style="text-align: left; padding-left: 2.0em;">
-										<li>Flipped normals for backfaces</li>
-										<li>Ideal for capes, fabric, and thin meshes</li>
-										<li>Same lighting controls as stylized lit</li>
+										<li>Standard URP lit shader</li>
 									</ul>
 								</div>
 							</div>
 							<!-- Image Grid Row 2 -->
-							<div style="display: flex; justify-content: space-between; gap: 10px; margin: 20px 0;">
+							<center><h3 style="margin-bottom: 1em;">Stylized Magma Shader</h3></center>
+							<div style="text-align: center; margin-bottom: 20px;">
+								<span class="image fit" style="max-width: 800px; width: 100%; display: inline-block; margin-bottom: 1em;">
+									<img src="images/DreamScape/MagmaSide.png" alt="Magma" style="border-radius: 4px;" />
+									<ul style="text-align: left; margin-top: 0; margin-bottom: 0; padding-left: 1.5em;">
+										<li>Depth</li>
+										<li>HDR</li>
+									</ul>
+								</span>
+							</div>
+							<!-- Image Grid Row 3 -->
+							<center><h3 style="margin-bottom: 0;">Geyser VFX</h3></center>
+							<div style="display: flex; justify-content: space-between; gap: 0.5em; margin: 1em 0;">
 								<div style="flex: 1; text-align: center;">
-									<img src="images/AbsMomentum/Foliage.png" alt="Foliage" style="width: 100%; height: auto; margin-bottom: 8px; border-radius: 4px;" />
+									<img src="images/DreamScape/Smoke.gif" alt="Smoke" style="width: 100%; height: auto; margin-bottom: 0.5em; border-radius: 4px;" />
 									<p style="margin-bottom: 0.25em;">
-										<b>Foliage Shader</b>
+										Smoke VFX
 									</p>
 									<ul style="text-align: left; margin-top: 0; padding-left: 1.5em;">
-										<li>Alpha clipping for foliage cutouts</li>
-										<li>Subsurface scattering approximation</li>
-										<li>Flipped normals for backfaces</li>
-										<li>Support for bent normals</li>
+										<li>Hints when a geyser is about to erupt.</li>
 									</ul>
 								</div>
 								<div style="flex: 1; text-align: center;">
-									<img src="images/AbsMomentum/Transparency.png" alt="Transparent" style="width: 100%; height: auto; margin-bottom: 8px; border-radius: 4px;" />
+									<img src="images/DreamScape/MagmaGeyser.gif" alt="Geyser" style="width: 100%; height: auto; margin-bottom: 0.5em; border-radius: 4px;" />
 									<p style="margin-bottom: 0.25em;">
-										<b>Transparent Stylized Lit Shader</b>
+										Magma Eruption VFX
 									</p>
 									<ul style="text-align: left; margin-top: 0; padding-left: 1.5em;">
-										<li>Standard alpha blending</li>
-										<li>Same lighting controls as stylized lit</li>
+										<li>The erupting magma that deals damage. </li>
 									</ul>
 								</div>
 							</div>
-							<!-- Image Grid Row 3 -->
-							<div style="display: flex; justify-content: space-between; gap: 10px; margin: 20px 0;">
+							<!-- Image Grid Row 4 -->
+							<center><h3 style="margin-bottom: 0;">Elite Shaders</h3></center>
+							<div style="display: flex; justify-content: space-between; gap: 0.5em; margin: 1em 0;">
 								<div style="flex: 1; text-align: center;">
-									<img src="images/AbsMomentum/Holographic.png" alt="Holographic" style="width: 100%; height: auto; margin-bottom: 8px; border-radius: 4px;" />
+									<img src="images/DreamScape/Shield.gif" alt="Shield VFX" style="width: 100%; height: auto; margin-bottom: 0.5em; border-radius: 4px;" />
 									<p style="margin-bottom: 0.25em;">
-										<b>Holographic Shader</b>
+										Shielder Shield Shader
 									</p>
 									<ul style="text-align: left; margin-top: 0; padding-left: 1.5em;">
 										<li>Fresnel outer glow effect</li>
-										<li>Animated scanline and glitch overlays</li>
-										<li>Adjustable transparency and patterns</li>
+										<li>Removable panels as shield health decreases.</li>
 									</ul>
 								</div>
 								<div style="flex: 1; text-align: center;">
-									<img src="images/AbsMomentum/Rigs.png" alt="Rigs" style="width: 100%; height: auto; margin-bottom: 8px; border-radius: 4px;" />
+									<img src="images/DreamScape/EliteCharger.jpg" alt="Elite Fresnel" style="width: 100%; height: auto; margin-bottom: 0.5em; border-radius: 4px;" />
 									<p style="margin-bottom: 0.25em;">
-										<b>5 Character Rigs</b>
+										General Elite Glow
 									</p>
 									<ul style="text-align: left; margin-top: 0; padding-left: 1.5em;">
-										<li>Game-ready deform rigs</li>
-										<li>Unity humanoid rig support</li>
-										<li>Standard naming conventions</li>
+										<li>Posterized, noisy fresnel.</li>
+										<li>HDR.</li>
 									</ul>
 								</div>
 							</div>
-
-							<hr style="margin: 40px 0;" />
-
-							<!-- Other Shaders Used -->
-							<div style="text-align: center; margin-bottom: 20px;">
-								<h3 style="text-align: left; margin-bottom: 15px;">Shaders Used From Other Projects</h3>
-								<span class="image fit" style="max-width: 800px; width: 100%; display: inline-block; margin-bottom: 20px;">
-									<img src="images/StylizedFluids/Backdrop.png" alt="Mainlight Comparison" style="border-radius: 4px;" />
-									<p>
-										<b>Stylized Fluids Shader</b><br/>
-										<a href="StylizedFluids.html"><b>Portfolio Link</b></a>
-									</p>
-								</span>
-								<span class="image fit" style="max-width: 800px; width: 100%; display: inline-block; margin-bottom: 20px;">
-									<img src="images/VolumetricLighting/MainAdd.png" alt="Mainlight Comparison" style="border-radius: 4px;" />
-									<p>
-										<b>Volumetric Lighting Shader</b><br/>
-										<a href="VolumetricLighting.html"><b>Portfolio Link</b></a>
-									</p>
-									
+							<!-- Image Grid Row 5 -->
+							<center><h3 style="margin-bottom: 1em;">Pivot Alignment Tool</h3></center>
+							<div style="text-align: center; margin-bottom: 1em;">
+								<span class="image fit" style="max-width: 800px; width: 100%; display: inline-block; margin-bottom: 1em;">
+									<img src="images/DreamScape/Pivot.gif" alt="Pivol Alignment Tool" style="border-radius: 4px;" />
+									<ul style="text-align: left; margin-top: 0; margin-bottom: 0; padding-left: 1.5em;">
+										<li>Sped up pivot alignments in project.</li>
+										<li>Provided precise pivot alignments based on the mesh renderer.</li>
+										<li>Heavily inspired by the pivot alignment tool in Houdini.</li>
+										<li>Multiple settings for each axis (Original, Center, Min, and Max).</li>
+									</ul>
 								</span>
 							</div>
-
-							<!-- End Image -->
-							<div style="text-align: center; margin-bottom: 40px;">
-								<span class="image fit" style="display: block; max-width: 1500px; width: 100%; margin: 0 auto;">
-									<img src="images/AbsMomentum/CharacterLineupCozy.jpg" alt="CharacterLineupCozy" />
-									<a href="https://store.steampowered.com/app/3810400/Absolute_Momentum/"><b>Steam Link</b></a>
+							<!-- Image Grid Row 6 -->
+							<center><h3 style="margin-bottom: 1em;">Rigs</h3></center>
+							<div style="text-align: center; margin-bottom: 1em;">
+								<span class="image fit" style="max-width: 800px; width: 100%; display: inline-block; margin-bottom: 1em;">
+									<img src="images/DreamScape/GuideRig.png" alt="Guide Rig" style="border-radius: 4px;" />
+									<ul style="text-align: left; margin-top: 0; margin-bottom: 0; padding-left: 1.5em;">
+										<li>Weight painted with intersecting and overlaying meshes.</li>
+										<li>Rigify control rig with additional bones for accessories, clothing, and extra body parts.</li>
+									</ul>
+								</span>
+							</div>
+							<!-- Image Grid Row 7 -->
+							<center><h3 style="margin-bottom: 1em;">Fullscreen Low Health Shader</h3></center>
+							<div style="text-align: center; margin-bottom: 1em;">
+								<span class="image fit" style="max-width: 800px; width: 100%; display: inline-block; margin-bottom: 1em;">
+									<img src="images/DreamScape/LowHealth.gif" alt="Low Health Shader" style="border-radius: 4px;" />
+									<ul style="text-align: left; margin-top: 0; margin-bottom: 0; padding-left: 1.5em;">
+										<li>Adjustable amount.</li>
+										<li>Dynamic.</li>
+									</ul>
 								</span>
 							</div>
 
