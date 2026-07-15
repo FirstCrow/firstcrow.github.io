@@ -36,7 +36,7 @@
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="About.html">About</a></li>
-							<li><a href="Portfolio.html">Portfolio</a></li>
+							<li><a href="Projects.html">Projects</a></li>
 							<li><a href="Contact.html">Contact</a></li>
 						</ul>
 					</nav>
@@ -44,12 +44,80 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<center><h1>Burrow</h1></center>
-							<center><span class="image fit" style="max-width: 600px; width: 100%;"><img src="images/monkeyOS.png" alt="" /></span></center>
-							<a href="https://charmiedev.itch.io/monkey">Itch.io Link</a>
-							<p>Rain VFX</p>
-							<p>Lighting shader</p>
-							<p>LODs and GPU instancing</p>
+							<!-- Header -->
+							<div style="text-align: center; margin-bottom: 2em;">
+								<h1>Nathan Gardea - Burrow</h1>
+								<p style="font-size: 1.2em; color: #555; margin-top: -1em;">
+										<b>Brackey's Game Jam Feb, 2026 </b> <br/>
+										Collaborated with 3 others
+										<a href="https://plutz.itch.io/burrow"><b>Itch.io Link</b></a>
+								</p>
+								<span class="image fit" style="display: block; max-width: 1000px; width: 100%; margin: 0 auto;">
+									<img src="images/GameJams/Burrow/Title.png" alt="Burrow Title" />
+								</span>
+							</div>
+
+							<!-- Project Overview -->
+							<p><b>Project Summary - </b> The game takes place deep in the forest where you have to use a camera with strange powers to find out what happened to your partner. 
+								This project tested my abilty to keep my game performant friendly. This is my first real attempt to achieve realistic rendering in games. I used tree and rock assets with
+								a large number of vertices in a vast forest. I had to create LODs to help keep the number low. I also had to learn the differenc between SRP batching and GPU instancing to see
+								which would work best in this situation. I also learned how to use the occlusion culling system in Unity to help performance as well.
+							</p>
+							
+							<hr style="margin: 2em;" />
+
+							<!-- Responsibilities Overview -->
+							<div style="margin-bottom: 2em;">
+								<h3 style="margin-bottom: 0;">Overview of my responsibilities</h3>
+								<ul style="list-style-type: disc; text-align: left; padding-left: 2em; margin: 0 auto; max-width: 95%;">
+									<li>Enviornmental Design.</li>
+									<li>Post processing.</li>
+									<li>Shaders.</li>
+								</ul>
+							</div>
+							
+							<!-- Contributions -->
+							<div style="margin-bottom: 2em;">
+								<h3 style="margin-bottom: 0;">My Contributions</h3>
+								<ul style="list-style-type: disc; text-align: left; padding-left: 2em; margin: 0 auto; max-width: 95%;">
+									<li>Rain VFX</li>
+									<li>Camera post processing</li>
+									<li>Lighting shader</li>
+									<li>Terrain shader</li>
+									<li>LODs, GPU instancing, occlusion culling</li>
+								</ul>
+							</div>
+
+							<hr style="margin: 2em;" />
+
+							<!-- Image Grid Row 1 -->
+							<center><h3 style="margin-bottom: 1em;">Environment</h3></center>
+							<div style="text-align: center; margin-bottom: 20px;">
+								<span class="image fit" style="max-width: 800px; width: 100%; display: inline-block; margin-bottom: 1em;">
+									<img src="images/GameJams/Burrow/Enviornment.png" alt="Magma" style="border-radius: 4px;" />
+									<ul style="text-align: left; margin-top: 0; margin-bottom: 0; padding-left: 1.5em;">
+										<li>Volumentric Lighting.</li>
+										<li>Foliage and Rock LODs.</li>
+										<li>Terrain shading with custom lighting.</li>
+										<li>GPU instancing on on most environmental assets.</li>
+										<li>Occlsuion culling.</li>
+										<li>Toggleable fullscreen rain shader.</li>
+									</ul>
+								</span>
+							</div>
+
+							<center><h3 style="margin-bottom: 1em;">Camera</h3></center>
+							<div style="text-align: center; margin-bottom: 20px;">
+								<span class="image fit" style="max-width: 800px; width: 100%; display: inline-block; margin-bottom: 1em;">
+									<img src="images/GameJams/Burrow/Camera.png" alt="Magma" style="border-radius: 4px;" />
+									<ul style="text-align: left; margin-top: 0; margin-bottom: 0; padding-left: 1.5em;">
+										<li>Custom camera post processings.</li>
+										<li>Draws from a render texture.</li>
+										<li>Toggleable fullscreen rain shader.</li>
+									</ul>
+								</span>
+							</div>
+
 						</div>
 					</div>
 			</div>
